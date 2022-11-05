@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
+}
+
+.container a {
+  width: fit-content;
+  color: var(--main-blue);
+  padding: 8px 13px;
+  border: 2px solid var(--main-blue);
+  display: flex;
+  align-items: center;
+  transition: .3s;
+}
+
+.container a svg {
+  margin-left: 8px;
+}
+
+.container a:is(:hover, :active) {
+  color: var(--main-white);
+  background-color: var(--main-blue);
+}

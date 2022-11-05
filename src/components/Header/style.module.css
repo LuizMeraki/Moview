@@ -1,0 +1,27 @@
+.header {
+  width: 100%;
+  margin-bottom: 7em;
+  padding: 2em 2.2em;
+  background-color: #242424;
+  box-shadow: 1px 0 20px #111111;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.title svg {
+  font-size: 1.8em;
+  margin-right: .1em;
+}
+
+.headerArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerArea h1 span {
+  color: #40a4b6;
+}
