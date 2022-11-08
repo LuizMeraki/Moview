@@ -1,14 +1,14 @@
 .form {
   background-color: #1e1e1e;
-  padding: 8px;
+  padding: 6px 8px;
   border-radius: 20px;
 }
 
 .form input,
 .form button {
-  font-size: .9em;
+  font-size: clamp(.8em, 2.2vw, .9em);
   color: var(--main-white);
-  padding: 5px 8px;
+  padding: 0 8px;
   outline: none;
   border: none;
   background-color: transparent;

@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   margin-bottom: 7em;
-  padding: 2em 2.2em;
+  padding: 1.3em 2.2em;
   background-color: #242424;
   box-shadow: 1px 0 20px #111111;
 }
@@ -11,9 +11,21 @@
   align-items: center;
 }
 
+.title h1 {
+  color: var(--main-white);
+}
+
 .title svg {
-  font-size: 1.8em;
   margin-right: .1em;
+}
+
+.title h1,
+.title svg {
+  font-size: clamp(1.4em, 4.5vw, 2em);
+}
+
+.title h1 span {
+  color: var(--main-blue);
 }
 
 .headerArea {
@@ -22,6 +34,14 @@
   align-items: center;
 }
 
-.headerArea h1 span {
-  color: #40a4b6;
+@media (max-width: 595px) {
+
+  .headerArea {
+    flex-direction: column;
+  }
+
+  .title {
+    margin-bottom: .8em;
+  }
+
 }

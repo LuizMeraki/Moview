@@ -26,10 +26,8 @@ export const useFetchMovies = () => {
       setMovies(response);
 
     } catch (error) {
-      console.log(error);
-
       setLoading(false);
-      setError("Houve um erro, tente mais tarde.");
+      setError("Houve um erro, tente novamente mais tarde.");
     }
 
     setLoading(false);

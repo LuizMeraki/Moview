@@ -13,3 +13,7 @@
 .footerArea p {
   color: var(--main-white);
 }
+
+.footerArea p span {
+  color: var(--main-blue);
+}

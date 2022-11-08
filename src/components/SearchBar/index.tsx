@@ -25,7 +25,7 @@ export const SearchBar = () => {
         type="text"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        placeholder="buscar filmes e séries"
+        placeholder="search a title"
         required
       />
       <button>

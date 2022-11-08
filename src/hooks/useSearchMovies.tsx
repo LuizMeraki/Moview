@@ -5,9 +5,8 @@ import { IMovieInfo } from "../interfaces/IMovies";
 const searchAPI = import.meta.env.VITE_SEARCH_API;
 const APIKey = import.meta.env.VITE_API_KEY;
 
-
 export const useSearchMovies = (query: string | null) => {
-  
+
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -16,10 +15,22 @@ export const useSearchMovies = (query: string | null) => {
 
   const searchMovie = async (url: string): Promise<void> => {
 
-    const request = await fetch(url);
-    const response = await request.json();
+    setLoading(true);
+    setError(null);
 
-    setMovies(response);
+    try {
+
+      const request = await fetch(url);
+      const response = await request.json();
+
+      setMovies(response);
+
+    } catch (error) {
+      setLoading(false);
+      setError("Houve um erro, tente novamente mais tarde");
+    }
+
+    setLoading(false);
   }
 
   useEffect(() => {
