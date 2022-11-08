@@ -2,6 +2,9 @@ import { useLocation } from "react-router-dom";
 import { useSearchMovies } from '../../hooks/useSearchMovies';
 import { MovieCard } from "../../components/MovieCard";
 import { BackHomeLink } from "../../components/BackHomeLink";
+import { Loading } from "../../components/Loading";
+import { PageTitle } from "../../components/PageTitle";
+import { ErrorMessage } from "../../components/ErrorMessage";
 
 export const MovieSearch = () => {
 
@@ -13,21 +16,33 @@ export const MovieSearch = () => {
   return (
     <main>
       <div className="max-width">
-        <div className="page-title-container">
-          <h1>Resultados da pesquisa</h1>
-        </div>
-        <div className="movie-container">
-          {
-            movies?.results.map((movie) => (
-              <MovieCard
-                title={movie.title}
-                banner={movie.poster_path}
-                id={movie.id}
-              />
-            ))
-          }
-        </div>
-        <BackHomeLink />
+        {error &&
+          <ErrorMessage message={error} />
+        }
+        {loading ? (
+          <Loading />
+        ) : (
+          <>
+            <PageTitle
+              title={`" ${queryValue} "`}
+            />
+            <div className="movie-container">
+              {
+                movies?.results.map((movie) => (
+                  <MovieCard
+                    key={movie.id}
+                    id={movie.id}
+                    title={movie.title}
+                    banner={movie.poster_path}
+                    votesAverage={movie.vote_average}
+                    showMoreInfo={false}
+                  />
+                ))
+              }
+            </div>
+            <BackHomeLink />
+          </>
+        )}
       </div>
     </main>
   );

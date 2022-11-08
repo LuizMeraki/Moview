@@ -11,6 +11,9 @@ export interface IResult {
   release_date: string;
   title: string;
   video: boolean;
+  budget: number;
+  runtime: number;
+  revenue: number;
   vote_average: number;
   vote_count: number;
 }
@@ -20,4 +23,6 @@ export interface IMovieInfo {
   results: IResult[];
   total_pages: number;
   total_results: number;
+  budget: number;
+  revenue: number;
 }

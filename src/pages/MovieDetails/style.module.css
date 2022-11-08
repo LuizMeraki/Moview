@@ -1,0 +1,27 @@
+.infoContainer {
+  max-width: 700px;
+  margin: 3.5em auto 0;
+}
+
+.info {
+  margin: 1.8em 0;
+}
+
+.info svg {
+  font-size: 1.5em;
+  color: var(--main-blue);
+}
+
+.info h4 {
+  margin: 0 10px;
+}
+
+.iconAndLabel {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.description {
+  display: block;
+}

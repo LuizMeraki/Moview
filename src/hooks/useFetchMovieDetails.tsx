@@ -3,8 +3,7 @@ import { IResult } from '../interfaces/IMovies';
 
 
 const APIKey = import.meta.env.VITE_API_KEY;
-const API = import.meta.env.VITE_API_MOVIE_DETAILS;
-
+const API = import.meta.env.VITE_API;
 
 export const useFetchMovieDetails = (id: string | undefined) => {
 
@@ -16,10 +15,22 @@ export const useFetchMovieDetails = (id: string | undefined) => {
 
   const fetchMovieDetails = async (url: string): Promise<void> => {
 
-    const request = await fetch(url);
-    const response = await request.json();
+    setLoading(true);
+    setError(null);
 
-    setMovie(response);
+    try {
+
+      const request = await fetch(url);
+      const response = await request.json();
+
+      setMovie(response);
+
+    } catch (error) {
+      setLoading(false);
+      setError("Houve um erro, tente novamente mais tarde.");
+    }
+
+    setLoading(false);
   }
 
   useEffect(() => {
@@ -31,5 +42,4 @@ export const useFetchMovieDetails = (id: string | undefined) => {
   }, []);
 
   return ({ movie, loading, error });
-
 }

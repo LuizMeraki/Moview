@@ -1,7 +1,8 @@
 .card {
   width: 100%;
-  max-width: 240px;
+  max-width: 300px;
   margin: 1.8em;
+  padding: 1.3em .9em;
   background-color: #242424;
   box-shadow: -5px 10px 15px #090909;
   display: flex;
@@ -11,12 +12,8 @@
 
 .banner img {
   width: 100%;
+  margin-bottom: 1.2em;
   border-radius: 0 0 20px 20px;
-}
-
-.title {
-  margin: 1.2em 0;
-  padding: 0 9px;
 }
 
 .title h3 {
@@ -24,6 +21,19 @@
   color: var(--main-blue);
   word-wrap: break-word;
   font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.votes {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.votes svg {
+  font-size: 1.2em;
+  color: #dede00;
 }
 
 .seeMore {
@@ -37,11 +47,13 @@
   text-align: center;
   width: 100%;
   color: var(--main-white);
+  border: 2px solid var(--main-blue);
   background-color: var(--main-blue);
-  padding: .8em 1.2em;
+  padding: .6em 1.2em;
   transition: .3s;
 }
 
 .seeMore a:hover {
-  background-color: #27707d;
+  color: var(--main-blue);
+  background-color: transparent;
 }
