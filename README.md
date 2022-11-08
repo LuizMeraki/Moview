@@ -1,7 +1,7 @@
 <h1 align="center">Moview 🎬</h1>
 
 <div align="center">
-  ![gif](https://user-images.githubusercontent.com/75648386/200679955-2e995084-f8f8-4094-8d5c-496964a2b5e2.gif)
+  <img width="80%" src="https://user-images.githubusercontent.com/75648386/200680127-b537903d-4572-4da4-9ee1-b1225b612ab4.gif"/>
 </div>
 
 <br>
