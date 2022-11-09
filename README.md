@@ -23,6 +23,8 @@
 Neste projeto eu consumo uma API do site <a href="https://www.themoviedb.org
 ">TMDB<a/>, onde fiz requisições do tipo GET para puxar informações como: filmes em alta, detalhes de um único filme e também extrai os dados digitados pelo usuário para mandar à API de busca. Esse projeto me ajudou a entender melhor sobre a sintaxe de tipagem no TypeScript.
   
+<br>
+  
 Segue uma lista com os principais conceitos aplicados neste projeto:
 
 <ul>
@@ -31,8 +33,12 @@ Segue uma lista com os principais conceitos aplicados neste projeto:
   <li>Tipagem - Esta aplicação foi desenvolvida em typescript, logo os dados percorridos pela aplicação precisam ter seus tipos declarados pelo desenvolvedor.</li>
 </ul>
 
+<br>
+  
 <p>Estes foram uns dos principais conceitos empregados nesta aplicação, conceitos que são utilizados no mercado de trabalho, logo, trazendo como prova uns dos conhecimentos necessário de um desenvolvedor front-end.</p>
 
+<br>  
+  
 ### Entre na plataforma Moview
 
 Link: <a href="https://moview-luizmeraki.vercel.app/" target="_blank">Moview</a>
