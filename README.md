@@ -31,8 +31,6 @@ Segue uma lista com os principais conceitos aplicados neste projeto:
   <li>Tipagem - Esta aplicação foi desenvolvida em typescript, logo os dados percorridos pela aplicação precisam ter seus tipos declarados pelo desenvolvedor.</li>
 </ul>
 
-<br>
-
 <p>Estes foram uns dos principais conceitos empregados nesta aplicação, conceitos que são utilizados no mercado de trabalho, logo, trazendo como prova uns dos conhecimentos necessário de um desenvolvedor front-end.</p>
 
 ### Entre na plataforma Moview
@@ -58,8 +56,6 @@ Link: <a href="https://moview-luizmeraki.vercel.app/" target="_blank">Moview</a>
 <br>
 
 # Imagens do projeto 
-
-<h3 align="center">Principais páginas</h3>
 
 <br>
 
