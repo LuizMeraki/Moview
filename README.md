@@ -18,24 +18,24 @@
 
 # Sobre
 
-<p>Eu desenvolvi o projeo Wolf Blog para fins didáticos pessoais, afim de pôr em prática os conhecimentos que eu adquiri dos meus estudos; podendo assim, demonstrar e comprovar conhececimento nas <a href="#tecnologias">tecnologias</a> da minha stack.</p>
+<p>Eu desenvolvi o projeto Moview para fins didáticos pessoais, afim de pôr em prática os conhecimentos que eu adquiri dos meus estudos e dando ênfase no TypeScript; podendo assim, demonstrar e comprovar conhecimento nas <a href="#tecnologias">tecnologias</a> da minha stack.</p>
 
-<p>O projeto não é para uso do dia a dia, por isso não se trata de um blog completo, porém com este projeto pude utilizar vários conceitos que são empregados no dia a dia de um programador no mercado de trabalho. Segue uma lista com os principais conceitos aplicados neste projeto:</p>
+Neste projeto eu consumo uma API do site <a href="https://www.themoviedb.org
+">TMDB<a/>, onde fiz requisições do tipo GET para puxar informações como: filmes em alta, detalhes de um único filme e também extrai os dados digitados pelo usuário para mandar à API de busca. Esse projeto me ajudou a entender melhor sobre a sintaxe de tipagem no TypeScript.
+  
+Segue uma lista com os principais conceitos aplicados neste projeto:
 
 <ul>
-  <li>CRUD - Criação, leitura, atualização e deleção de dados. Por exemplo, criar um novo post, traze-lo ao usuário, atualizar e deletar    o mesmo.
-  </li>
+  <li>Requisições HTTP - Nesta aplicação eu consumi os dados de uma API, colocando em prática um dos verbos HTTP, o GET.</li>
   <li>SPA - Páginas dinâmicas que alteram seu conteúdo sem serem atualizadas.</li>
-  <li>Autenticação de usuários - O usuário só consegue usufruir da plataforma caso tenha criado uma conta e esteja autenticado.</li>
-  <li>Integração no banco de dados - Os dados do usuário como: e-mail, senha, posts..., estão salvos no banco de dados do google, através    do Firebase, uma ferramenta com plano gratuito de banco de dados.
-  </li>
+  <li>Tipagem - Esta aplicação foi desenvolvida em typescript, logo os dados percorridos pela aplicação precisam ter seus tipos declarados pelo desenvolvedor.</li>
 </ul>
 
 <br>
 
-<p>Estes foram uns dos PRINCIPAIS conceitos empregados nesta aplicação, conceitos que são utilizados no mercado de trabalho, logo, trazendo como prova uns dos conhecimentos necessário de um desenvolvedor front-end.</p>
+<p>Estes foram uns dos principais conceitos empregados nesta aplicação, conceitos que são utilizados no mercado de trabalho, logo, trazendo como prova uns dos conhecimentos necessário de um desenvolvedor front-end.</p>
 
-### Entre na plataforma e faça seu próprio post!
+### Entre na plataforma Moview
 
 Link: <a href="https://moview-luizmeraki.vercel.app/" target="_blank">Moview</a>
 
@@ -43,19 +43,18 @@ Link: <a href="https://moview-luizmeraki.vercel.app/" target="_blank">Moview</a>
 
 # Tecnologias
 
-<p>Entendendo sobre a aplicação, vamos falar um pouco sobre as tecnologias e ferramentas que foram utilizadas para chegar neste produto final do projeto.</p>
+<p>Segue a lista de tecnologias e ferramentas que foram utilizadas para chegar neste produto final do projeto.</p>
 
 <br>
 
 <ul>
-  <li>Vite
-    <ul>
-      <li>
-        <p>TECHS</p>
-      </li>
-    </ul>
-  </li>
-
+  <li>Vite</li>
+  <li>React</li>
+  <li>TypeScript</li>
+  <li>React Router Dom</li>
+  <li>CSS Modules</li>
+</ul>
+  
 <br>
 
 # Imagens do projeto 
@@ -65,6 +64,9 @@ Link: <a href="https://moview-luizmeraki.vercel.app/" target="_blank">Moview</a>
 <br>
 
 <div align="center">
+  <img src="https://user-images.githubusercontent.com/75648386/200826576-9c34aa50-63e9-4070-938a-4975bc034cd6.jpeg"/>
+  <img src="https://user-images.githubusercontent.com/75648386/200826600-f88831f6-0a6b-4fb7-b526-718a8885f327.jpeg"/>
+  <img src="https://user-images.githubusercontent.com/75648386/200826629-37fc1e46-b0cc-4b93-95de-c2eb814317ac.jpeg"/>
 </div>
 
 <br>
